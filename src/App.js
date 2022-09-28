@@ -10,6 +10,7 @@ import { EventosES6, EventosES7, MasSobreEventos } from './components/EventosES6
 import Padre from './components/ComunicacionComponentes'
 import CicloVida from './components/CicloVida'
 import AjaxApis from './components/AjaxApi'
+import ContadorHooks from './components/ContadorHooks'
 
 function App() {
   return (
@@ -59,6 +60,8 @@ function App() {
           <CicloVida/>
           <hr></hr>
           <AjaxApis/>
+          <hr></hr>
+          <ContadorHooks/>
         </section>
       </header>
     </div>
