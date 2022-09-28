@@ -11,6 +11,7 @@ import Padre from './components/ComunicacionComponentes'
 import CicloVida from './components/CicloVida'
 import AjaxApis from './components/AjaxApi'
 import ContadorHooks from './components/ContadorHooks'
+import ScroolHooks from './components/ScroolHooks'
 
 function App() {
   return (
@@ -59,9 +60,11 @@ function App() {
           <hr></hr>
           <CicloVida/>
           <hr></hr>
-          <AjaxApis/>
+          {/* <AjaxApis/> */}
           <hr></hr>
           <ContadorHooks/>
+          <hr></hr>
+          <ScroolHooks/>
         </section>
       </header>
     </div>
