@@ -44,8 +44,9 @@ export default function AjaxHooks() {
     const getPokemons = async (url) => {
       let res = await fetch(url),
         json = await res.json();
-
+      console.log(json.results);
       json.results.forEach(async (ele) => {
+        console.log(ele.url);
         let res = await fetch(ele.url),
           json = await res.json();
         //   console.log(json.name)
@@ -54,7 +55,6 @@ export default function AjaxHooks() {
           name: json.name,
           avatar: json.sprites.front_default,
         };
-
         setPokemons((pokemons) => [...pokemons, pokemon]);
         //spreed operator
         //con el spreed operator "de lo que ya hay en el state.pokemons,
@@ -72,8 +72,10 @@ export default function AjaxHooks() {
       {pokemons.length === 0 ? (
         <h3>Cargando</h3>
       ) : (
-        pokemons.map((el) => (
-          <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+        pokemons.map((el,index) => (
+          <div key={index}>
+            <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+          </div>
         ))
       )}
     </>

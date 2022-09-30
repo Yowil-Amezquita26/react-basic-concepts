@@ -11,7 +11,7 @@ import Padre from './components/ComunicacionComponentes'
 import CicloVida from './components/CicloVida'
 // import AjaxApis from './components/AjaxApi'
 import ContadorHooks from './components/ContadorHooks'
-import ScroolHooks from './components/ScroolHooks'
+// import ScroolHooks from './components/ScroolHooks'
 import RelojHooks from './components/RelojHooks'
 import AjaxHooks from './components/AjaxHooks'
 import HooksPersonalizado from './components/HooksPersonalizados'
@@ -67,7 +67,7 @@ function App() {
           <hr></hr>
           <ContadorHooks/>
           <hr></hr>
-          <ScroolHooks/>
+          {/* <ScroolHooks/> */}
           <hr></hr>
           <RelojHooks/>
           <hr></hr>
